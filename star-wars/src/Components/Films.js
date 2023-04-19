@@ -52,7 +52,7 @@ const Films = () => {
   return (
     <>
       <div style={{background:"black"}}>
-        <h1>.</h1>
+        <h1>Star Wars</h1>
         {loading && <div>Data is loading. Please wait...</div>}
         {error && <div>{`There is a problem fetching your data - ${error}`}</div>}
         <ul>

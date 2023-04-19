@@ -29,10 +29,9 @@ li {
 }
 
 h1{
-  background-image: url('C:\Users\Abbah\Desktop\star war img.PNG');
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin: 0px 0px 0px 400px;
+ color: yellow;
+ font-size: 100px;
+ padding-left: 400px;
 }
 
 .imgCard{
