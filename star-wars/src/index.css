@@ -10,7 +10,7 @@ ul {
   grid-template-columns: repeat(3, 1fr);
   grid-row-gap: 2rem;
   grid-column-gap: 30px;
-  margin: 80px;
+  margin: 20px 80px;
   color: white;
 }
 li:hover{
@@ -21,13 +21,20 @@ li:hover{
 li {
   font-family: Arial, Helvetica, sans-serif;
   border: 1px solid #747272;
-  padding: 10px;
+  padding: 15px;
   border-radius: 5px;
   background-image: url('https://images6.alphacoders.com/589/589951.jpg');
   background-repeat: repeat;
   background-size: contain;
+  justify-content: center;
+  align-items: center;
 }
 
+li:last-child,
+li:nth-child(4),
+li:nth-child(5){
+  margin-bottom: 30px;
+}
 h1{
  color: yellow;
  font-size: 100px;
@@ -41,11 +48,19 @@ h1{
 
 .redborder{
   padding: 20px 0px;
+  line-height: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
   border-bottom: 1px solid red;
 }
 .title{
-  font-size: 18px;
+  font-size: 17px;
 }
 .date{
   color: #b8b6b6;
+}
+
+.link{
+  color: yellow;
+  margin-top: 40px;
 }
