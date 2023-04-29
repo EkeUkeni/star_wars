@@ -52,7 +52,7 @@ const Films = () => {
   return (
     <>
       <div style={{background:"black"}}>
-        <h1>.</h1>
+        <h1>Star Wars</h1>
         {loading && <div>Data is loading. Please wait...</div>}
         {error && <div>{`There is a problem fetching your data - ${error}`}</div>}
         <ul>
@@ -63,7 +63,7 @@ const Films = () => {
                                 <div className='text'>
                                   <div className='title'><h2>{item.title}</h2></div>
                                   <div className='date'><p>{item.release_date}</p></div>
-                                  <div className='redborder'><p>{item.opening_crawl}</p></div>
+                                  <div className='redborder'><p>{item.opening_crawl.split('\n').slice(0, 10).join('\n')}...</p></div>
                                   <div ><MoreInfoBtn text={'More Info'}/></div>
                                 </div> 
                               </div>
