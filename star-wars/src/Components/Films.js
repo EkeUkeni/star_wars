@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-//import axios from 'axios';
 import MoreInfoBtn from './MoreInfo';
 
 
@@ -31,22 +30,6 @@ const Films = () => {
             .finally(() => {
                 setLoading(false)
             })
-
-
-    // const getData = async () => {
-    //     try {
-    //         const response = await axios.get(`https://swapi.dev/api/films`);
-    //         setData(response.data);
-    //         setError(null);
-    //     } catch (err) {
-    //         setError(err.message);
-    //         setData(null);
-    //     } finally {
-    //         setLoading(false);
-    //     }
-    // };
-
-    // getData();
 
       }, [])
   return (

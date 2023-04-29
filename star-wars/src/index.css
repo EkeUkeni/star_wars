@@ -23,17 +23,42 @@ li {
   border: 1px solid #747272;
   padding: 15px;
   border-radius: 5px;
-  background-image: url('https://images6.alphacoders.com/589/589951.jpg');
-  background-repeat: repeat;
-  background-size: contain;
-  justify-content: center;
-  align-items: center;
-}
+ }
 
 li:last-child,
 li:nth-child(4),
 li:nth-child(5){
   margin-bottom: 30px;
+}
+li:nth-child(1){
+  background-image: url('https://images6.alphacoders.com/589/589951.jpg');
+  background-repeat: repeat;
+  background-size: contain;
+}
+li:nth-child(2){
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8koQQ3zGY0tub3qP3zap50UkR2E017QJnpQE8gN_HW4xwEDmfPRtuLEY3Ouh28Yg8tzQ&usqp=CAU');
+  background-repeat: repeat;
+  background-size: contain;
+}
+li:nth-child(3){
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFnucM4aodLidzJjIna2XQ33OvS0-i3hXTYoYrJ2EoMgwwBdty9XTfarrqbx4tqYIsDGM&usqp=CAU');
+  background-repeat: repeat;
+  background-size: contain;
+}
+li:nth-child(4){
+  background-image: url('https://c4.wallpaperflare.com/wallpaper/855/698/460/science-fiction-cityscape-futuristic-star-wars-wallpaper-preview.jpg');
+  background-repeat: repeat;
+  background-size: contain;
+}
+li:nth-child(5){
+  background-image: url('https://c4.wallpaperflare.com/wallpaper/380/216/49/mandalorians-star-wars-cyberpunk-futuristic-cyber-hd-wallpaper-preview.jpg');
+  background-repeat: repeat;
+  background-size: contain;
+}
+li:nth-child(6){
+  background-image: url('https://c4.wallpaperflare.com/wallpaper/281/135/661/disney-castle-r2-d2-bb-8-star-wars-wallpaper-preview.jpg');
+  background-repeat: repeat;
+  background-size: contain;
 }
 h1{
  color: yellow;
@@ -48,7 +73,7 @@ h1{
 
 .redborder{
   padding: 20px 0px;
-  line-height: 20px;
+  line-height: 21px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   border-bottom: 1px solid red;
