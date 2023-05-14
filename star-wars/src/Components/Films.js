@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import MoreInfoBtn from './MoreInfo';
+import {Link} from 'react-router-dom';
+import starWarsLogo from '../star.PNG'
+// import MovieContents from './MovieContents';
+
 
 
 
@@ -32,23 +35,23 @@ const Films = () => {
             })
 
       }, [])
+      
   return (
     <>
       <div style={{background:"black"}}>
-        <h1>Star Wars</h1>
+      <img className='logo' src={starWarsLogo} alt='logo'/>
         {loading && <div>Data is loading. Please wait...</div>}
         {error && <div>{`There is a problem fetching your data - ${error}`}</div>}
-        <ul>
+        <ul className='name'>
             {data && data.map((item) => {
                       return (
                           <li className='card' key={item.episode_id}>
-                              <div>
                                 <div className='text'>
                                   <div className='title'><h2>{item.title}</h2></div>
                                   <div className='date'><p>{item.release_date}</p></div>
                                   <div className='redborder'><p>{item.opening_crawl.split('\n').slice(0, 10).join('\n')}...</p></div>
-                                  <div ><MoreInfoBtn text={'More Info'}/></div>
-                                </div> 
+                                  <Link style={{color:"yellow"}} to={`/item/${item.episode_id}`}>More Info
+                                  </Link> 
                               </div>
                           </li>
                       )
